@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=caselab_db'
+      - 'POSTGRES_PASSWORD=caselab'
+      - 'POSTGRES_USER=caselab'
+    ports:
+      - '5432'
